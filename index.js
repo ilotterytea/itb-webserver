@@ -23,9 +23,11 @@ var app = express();
 
 // Routers:
 var homepage = require("./routers/homepage");
+var auth = require("./routers/auth");
 
 // Use the routers:
 app.use("/", homepage);
+app.use("/auth", auth);
 
 // Use the static files:
 app.use(express.static(`${__dirname}/static`));
