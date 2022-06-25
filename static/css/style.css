@@ -1,0 +1,107 @@
+/**
+ * Copyright (C) 2022 ilotterytea
+ * 
+ * This file is part of iLotteryteaLive.
+ * 
+ * iLotteryteaLive is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * iLotteryteaLive is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with iLotteryteaLive.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;600&display=swap');
+ @import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+ 
+ body {
+     font-family: "Inter", sans-serif;
+     background-color: rgb(230, 230, 230);
+ }
+ 
+ h1, h2, h3 {
+     font-family: "Manrope", sans-serif;
+ }
+ 
+ .sidebar {
+     left: 0px;
+     position: fixed;
+     top: 0px;
+     padding-top: 40px;
+     bottom: 0;
+     overflow-y: scroll;
+     width: 15em;
+     background-color: #fbfbfb;
+     z-index: 1;
+   }
+     
+ .sidebar a {
+     padding: 8px;
+     font-size: 16px;
+     display: block;
+     text-decoration: none;
+     background-color: #fbfbfb;
+     margin: 8px;
+     border-radius: 6px;
+     color: #141414;
+     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+     border: 1px solid rgb(167, 167, 167);
+ }
+ 
+ a #link {
+ 
+ }
+ 
+ .sidebar .brand {
+     display: flex;
+     align-items: center;
+     padding-left: 5px;
+ }
+ 
+ #underline {text-decoration: underline;}
+ 
+ .sidebar .brand img {
+     vertical-align: middle;
+     border-radius: 5px;
+     padding-right: 12px;
+ }
+     
+ .sidebar a:hover {
+     cursor: pointer;
+     background-color: rgb(40, 140, 233);
+     color: #fff;
+ }
+     
+ .body-text {
+     margin-left: 240px;
+     font-size: 18px;
+ }
+ 
+ table { /* Table */
+     margin-bottom: 30px;
+     width: 100%;
+     text-align: left;
+     color: #3f3f3f;
+     border-collapse: collapse;
+     border: 1px solid #e8e8e8;
+ }
+ table tr:nth-child(even) {
+     background-color: #f7f7f7;
+ }
+ table th, table td {
+     padding: 10px 15px;
+ }
+ table th {
+     background-color: #f0f0f0;
+     border: 1px solid #dedede;
+     border-bottom-color: #c9c9c9;
+ }
+ table td {
+     border: 1px solid #e8e8e8;
+ }
