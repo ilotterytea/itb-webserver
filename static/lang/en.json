@@ -1,0 +1,75 @@
+{
+    "buttons": {
+        "home": "Home",
+        "commands": "Commands",
+        "login": "Log in via Twitch"
+    },
+    "titles": {
+        "commands": "Twitch commands"
+    },
+    "table": {
+        "name": "Name",
+        "description": "Description",
+        "options": "Options",
+        "cooldown": "Cooldown",
+        "notes": "Notes..."
+    },
+    "cmds": {
+        "ping": {
+            "name": "!ping",
+            "desc": "Checking if it's alive, and a bunch of other data.",
+            "options": "-",
+            "cooldown": "5 sec.",
+            "notes": "-"
+        },
+        "ecount": {
+            "name": "!ecount",
+            "desc": "Shows how much of the specified 7TV emote has been used.",
+            "options": "-",
+            "cooldown": "1.5 sec.",
+            "notes": "-"
+        },
+        "etop": {
+            "name": "!etop",
+            "desc": "Top 5 most used 7TV channel emotes.",
+            "options": "-",
+            "cooldown": "5 sec.",
+            "notes": "-"
+        },
+        "join": {
+            "name": "!join",
+            "desc": "Get the bot to join your chat room!",
+            "options": "-",
+            "cooldown": "120 sec.",
+            "notes": "-"
+        },
+        "set": {
+            "name": "!set",
+            "desc": "Set the preferred options for your channel.",
+            "options": "<code>lang</code>: set the channel language <i>(e.g. !set lang ru_ru)</i>.",
+            "cooldown": "10 sec.",
+            "notes": "-"
+        },
+        "massping": {
+            "name": "!massping",
+            "desc": "Ping em, Fors! <img src=\"https://static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0\"> 💪",
+            "options": "-",
+            "cooldown": "60 sec.",
+            "notes": "-"
+        },
+        "spam": {
+            "name": "!spam",
+            "desc": "Sending a message with the specified repetitions.",
+            "options": "-",
+            "cooldown": "30 sec.",
+            "notes": "-"
+        },
+        "storage": {
+            "name": "!storage",
+            "desc": "Manipulating the storage file <i>(storage/storage.json)</i> with this command.",
+            "options": "<code>chown</code>: change the user's role <i>(e.g. !storage chown monkeos:special)</i>; <code>prefix</code>: change the prefix; <code>part</code>: leave the someone's chat room.",
+            "cooldown": "5 sec.",
+            "notes": "-"
+        }
+    }
+}

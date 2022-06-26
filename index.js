@@ -18,21 +18,24 @@
 // Libraries:
 var express = require("express");
 require("dotenv").config({path: "./bot.env"});
+
 // App:
 var app = express();
 
 // Routers:
 var homepage = require("./routers/homepage");
 var auth = require("./routers/auth");
+var cmds = require("./routers/commands");
 
 // Use the routers:
 app.use("/", homepage);
 app.use("/auth", auth);
+app.use("/commands", cmds);
 
 // Use the static files:
 app.use(express.static(`${__dirname}/static`));
 
 // Launch the express server:
-app.listen(8080, () => {
-    console.log("Running on port 8080!");
+app.listen(parseInt(process.env.WEB_PORT), () => {
+    console.log("Server is working!");
 });

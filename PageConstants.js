@@ -17,15 +17,13 @@
 
 const consts = {
     Page: {
-        Sidebar: `<div class="brand">
+        SidebarNotLoggedIn: `<div class="brand">
         <img src="https://cdn.7tv.app/emote/60ae69a686fc40d488b1033d/4x" width="64">
         <h3><span id="underline">i</span>Lotterytea's <span id="underline">T</span>witch <span id="underline">B</span>ot <span id="underline" style="color: rgb(255, 43, 43);">2</span></h3>
         </div>
         <hr>
         <a href="/" id="button"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="/commands" id="button"><i class="fa-solid fa-terminal"></i> Commands</a>
-        <a href="/stats" id="button"><i class="fa-solid fa-chart-bar"></i> Statistics</a>
-        <a href="/account" id="button"><i class="fa-solid fa-id-badge"></i> My Account</a>`
+        <a href="/commands" id="button"><i class="fa-solid fa-terminal"></i> Commands</a>`
     }
 }
 module.exports = consts;

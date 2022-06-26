@@ -31,10 +31,7 @@ router.use(async (req, res, next) => {
 router.get("/", async (req, res) => {
     let page = readFileSync("./server-apollo/static/pages/homepage.html", {encoding: "utf-8"});
 
-    var commit = readFileSync("storage/commit.txt", {encoding: "utf-8"}).split("-0-g");
-    var commit_branch = commit[0].replace("heads/", "");
-
-    page = page.replace("<!--%SIDEBAR%-->", consts.Page.Sidebar);
+    page = page.replace("<!--%SIDEBAR%-->", consts.Page.SidebarNotLoggedIn);
 
     return res.send(page).status(200);
 });
