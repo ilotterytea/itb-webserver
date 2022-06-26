@@ -17,7 +17,17 @@
 
 // Libraries:
 var express = require("express");
+var http = require("http");
+var https = require("https");
+const { readFileSync } = require("fs");
 require("dotenv").config({path: "./bot.env"});
+
+// SSL Certificate:
+var certcredentials = {
+    key: readFileSync(process.env.CERT_PRIKEY, {encoding: "utf-8"}),
+    cert: readFileSync(process.env.CERT_CERT, {encoding: "utf-8"}),
+    ca: readFileSync(process.env.CERT_CA, {encoding: "utf-8"})
+};
 
 // App:
 var app = express();
@@ -36,6 +46,8 @@ app.use("/commands", cmds);
 app.use(express.static(`${__dirname}/static`));
 
 // Launch the express server:
-app.listen(parseInt(process.env.WEB_PORT), () => {
-    console.log("Server is working!");
-});
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(certcredentials, app);
+
+httpServer.listen(process.env.WEB_HTTPPORT, () => console.log("HTTP Server running on port ", process.env.WEB_HTTPPORT));
+httpsServer.listen(process.env.WEB_HTTPSPORT, () => console.log("HTTPS Server running on port ", process.env.WEB_HTTPSPORT));
