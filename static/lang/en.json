@@ -41,42 +41,42 @@
             "desc": "Get the bot to join your chat room!",
             "options": "-",
             "cooldown": "120 sec.",
-            "notes": "-"
+            "notes": ""
         },
         "set": {
             "name": "!set",
             "desc": "Set the preferred options for your channel.",
             "options": "<code>lang</code>: set the channel language <i>(e.g. !set lang ru_ru)</i>.",
             "cooldown": "10 sec.",
-            "notes": "-"
+            "notes": "<span style=\"color: green;\">Only for broadcasters.</span>"
         },
         "massping": {
             "name": "!massping",
             "desc": "Ping em, Fors! <img src=\"https://static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0\"> 💪",
             "options": "-",
             "cooldown": "60 sec.",
-            "notes": "-"
+            "notes": "<span style=\"color: purple;\">Only for special users.</span>"
         },
         "spam": {
             "name": "!spam",
             "desc": "Sending a message with the specified repetitions.",
             "options": "-",
             "cooldown": "30 sec.",
-            "notes": "-"
+            "notes": "<span style=\"color: purple;\">Only for special users.</span>"
         },
         "storage": {
             "name": "!storage",
             "desc": "Manipulating the storage file <i>(storage/storage.json)</i> with this command.",
             "options": "<code>chown</code>: change the user's role <i>(e.g. !storage chown monkeos:special)</i>; <code>prefix</code>: change the prefix; <code>part</code>: leave the someone's chat room.",
             "cooldown": "5 sec.",
-            "notes": "-"
+            "notes": "<span style=\"color: red;\">Only for supa-users.</span>"
         },
         "scmd": {
             "name": "!scmd",
             "desc": "Create your own commands! ",
             "options": "<code>mk <i>command_name</i> <i>response...</i></code>: Make a new command <i>(e.g. !scmd mk commands https://bot.hmmtodayiwill.ru/commands)</i><br><code>rm <i>command_name</i></code>: Remove the command <i>(e.g. !scmd rm commands)</i><br><code>ch <i>command_name</i> <i>response...</i></code>: Change the response of the command <i>(e.g. !scmd ch commands https://bot.hmmtodayiwill.ru/commands?lang=ru)</i>",
             "cooldown": "5 sec.",
-            "notes": "-"
+            "notes": "<span style=\"color: green;\">Only for broadcasters.</span>"
         }
     }
 }
