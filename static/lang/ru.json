@@ -70,6 +70,13 @@
             "options": "<code>chown</code>: изменить роль пользователя <i>(например, !storage chown monkeos:special)</i>; <code>prefix</code>: изменить префикс; <code>part</code>: покинуть чей-то чат.",
             "cooldown": "5 сек.",
             "notes": "-"
+        },
+        "scmd": {
+            "name": "!scmd",
+            "desc": "Создать пользовательскую команду для своего чата! ",
+            "options": "<code>mk <i>имя_команды</i> <i>сообщение...</i></code>: Создать новую команду <i>(например, !scmd mk commands https://bot.hmmtodayiwill.ru/commands)</i><br><code>rm <i>имя_команды</i></code>: Удалить существующую команду <i>(например, !scmd rm commands)</i><br><code>ch <i>имя_команды</i> <i>сообщение...</i></code>: Изменить ответ команды <i>(например, !scmd ch commands https://bot.hmmtodayiwill.ru/commands?lang=ru)</i>",
+            "cooldown": "5 сек.",
+            "notes": "-"
         }
     }
 }

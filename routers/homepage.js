@@ -31,9 +31,14 @@ router.use(async (req, res, next) => {
 router.get("/", async (req, res) => {
     let page = readFileSync("./server-apollo/static/pages/homepage.html", {encoding: "utf-8"});
 
+    page = page.replace("<!--%PAGENAME%-->", "Home");
     page = page.replace("<!--%SIDEBAR%-->", consts.Page.SidebarNotLoggedIn);
 
     return res.send(page).status(200);
+});
+
+router.get("/src", async(req, res) => {
+    res.redirect("https://github.com/notdankenough/bot2");
 });
 
 module.exports = router;

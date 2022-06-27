@@ -70,6 +70,13 @@
             "options": "<code>chown</code>: change the user's role <i>(e.g. !storage chown monkeos:special)</i>; <code>prefix</code>: change the prefix; <code>part</code>: leave the someone's chat room.",
             "cooldown": "5 sec.",
             "notes": "-"
+        },
+        "scmd": {
+            "name": "!scmd",
+            "desc": "Create your own commands! ",
+            "options": "<code>mk <i>command_name</i> <i>response...</i></code>: Make a new command <i>(e.g. !scmd mk commands https://bot.hmmtodayiwill.ru/commands)</i><br><code>rm <i>command_name</i></code>: Remove the command <i>(e.g. !scmd rm commands)</i><br><code>ch <i>command_name</i> <i>response...</i></code>: Change the response of the command <i>(e.g. !scmd ch commands https://bot.hmmtodayiwill.ru/commands?lang=ru)</i>",
+            "cooldown": "5 sec.",
+            "notes": "-"
         }
     }
 }

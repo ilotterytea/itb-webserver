@@ -32,6 +32,8 @@ router.get("/", async (req, res) => {
     let page = readFileSync("./server-apollo/static/pages/commands.html", {encoding: "utf-8"});
     let cmds = ``;
 
+    page = page.replace("<!--%PAGENAME%-->", "Home");
+
     let lang = (req.query.lang != undefined) ? req.query.lang.toLowerCase() : "en";
     if(!(existsSync(`./server-apollo/static/lang/${lang}.json`))) lang = "en";
 
