@@ -19,7 +19,8 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;600&display=swap');
  @import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
- 
+ @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,400&display=swap');
+
  body {
      font-family: "Inter", sans-serif;
      background-color: rgb(230, 230, 230);
@@ -39,6 +40,7 @@
      width: 15em;
      background-color: #fbfbfb;
      z-index: 1;
+     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
    }
      
  .sidebar a {
@@ -52,10 +54,6 @@
      color: #141414;
      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
      border: 1px solid rgb(167, 167, 167);
- }
- 
- a #link {
- 
  }
  
  .sidebar .brand {
@@ -74,7 +72,7 @@
      
  .sidebar a:hover {
      cursor: pointer;
-     background-color: rgb(40, 140, 233);
+     background-color: #0099ff;
      color: #fff;
  }
      
@@ -106,11 +104,11 @@
      border: 1px solid #e8e8e8;
  }
  code {
-    background-color: rgb(226, 219, 176);
+    background: linear-gradient(0deg, #e2dbb0, #dbcf7e);
     border-radius: 5px;
     margin: 6px;
     padding: 0 2px;
-    border: 1px solid rgb(185, 172, 135);
+    border: 1px solid #b9ac87;
  }
 
  /*спиздил со стаковерфлоу гигачад момент*/
@@ -131,4 +129,74 @@
     50% {
         background-position: 100% 0;
     }
+}
+
+.commandInfo #cmd_content {
+    padding: 0em 0em 2em 1em;
+    margin: 0;
+}
+
+.commandInfo #cmd_header {
+    color: #807141;
+    font-size: 1.75em;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+.commandInfo #cmd_header img {
+    padding-right: 6px;
+    vertical-align: middle;
+    cursor: help;
+}
+
+.commandInfo #cmd_cmd {
+    padding: 2px 8px;
+    background-color: #d8d3c3;
+}
+
+.commandInfo #cmd_notes {
+    background-color: #ddbcbc;
+}
+
+i {
+    vertical-align: middle;
+}
+
+.commandInfo #cmd_dialog .msg {
+    background: linear-gradient(0deg, #222, #3e3e3e);
+    border: 1px solid #444444;
+    padding: 4px;
+    color: #ddd;
+    margin-left: 25px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+}
+
+.commandInfo #cmd_dialog .msg #name {
+    font-weight: 600;
+}
+
+.commandInfo #cmd_dialog .msg img {
+    vertical-align: middle;
+}
+
+.commandInfo #cmd_dialog .msg:nth-child(even) {
+    background: linear-gradient(0deg, #111, #333);
+}
+
+.commandInfo #cmd_dialog #cmd_header {
+    font-size: 1.25em;
+}
+
+.commandInfo #cmd_dialog #dialog_exampleheader {
+    font-size: 1em;
+    margin-left: 12.5px;
+}
+
+.commandInfo:nth-child(even) {
+    background-color: #dadada;
+}
+
+.commandInfo #cmd_options #cmd_header {
+    font-size: 1.25em;
 }

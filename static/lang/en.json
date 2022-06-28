@@ -1,82 +1,188 @@
 {
-    "buttons": {
+    "titles": {
+        "home": "Главная",
+        "commands": "Команды"
+    },
+    "side_buttons": {
         "home": "Home",
         "commands": "Commands",
         "login": "Log in via Twitch"
     },
-    "titles": {
-        "commands": "Twitch commands"
+    "tooltips": {
+        "modRequired": "Requires a mod role!",
+        "brdRequired": "Requires a broadcaster role!",
+        "supRequired": "Requires a supa-user role!"
     },
-    "table": {
-        "name": "Name",
-        "description": "Description",
+    "headers": {
         "options": "Options",
         "cooldown": "Cooldown",
-        "notes": "Notes..."
+        "notes": "Notes",
+        "example": "Example"
     },
     "cmds": {
         "ping": {
-            "name": "!ping",
+            "namespace_id": "ping",
+            "name": "Ping!",
+            "cmd_template": "!ping",
             "desc": "Checking if it's alive, and a bunch of other data.",
-            "options": "-",
+            "options": "",
             "cooldown": "5 sec.",
-            "notes": "-"
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!ping",
+                    "<img src=\"https://cdn.frankerfacez.com/emote/536927/1\" alt=\"FeelsDankMan\" title=\"FeelsDankMan\"> 🏓 Ping! Session uptime: 0 d. 00:00:54. Landed in 6 chats. Memory usage: 418 MB/966 MB. Latency to TMI: 187ms. Commit 6ce8068 (master)."
+                ]
+            }
         },
         "ecount": {
-            "name": "!ecount",
+            "namespace_id": "ecount",
+            "name": "7TV Emote count!",
+            "cmd_template": "!ecount [EMOTE]",
             "desc": "Shows how much of the specified 7TV emote has been used.",
-            "options": "-",
-            "cooldown": "1.5 sec.",
-            "notes": "-"
+            "options": "",
+            "cooldown": "5 sec.",
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!ecount <img src=\"https://cdn.7tv.app/emote/62680b95ad9d41332dc15937/1x\" title=\"wait\" alt=\"wait\">",
+                    "<img src=\"https://cdn.7tv.app/emote/62680b95ad9d41332dc15937/1x\" title=\"wait\" alt=\"wait\"> has been used 9,872 times."
+                ]
+            }
         },
         "etop": {
-            "name": "!etop",
-            "desc": "Top 5 most used 7TV channel emotes.",
-            "options": "-",
+            "namespace_id": "etop",
+            "name": "7TV Emote Leaderboard!",
+            "cmd_template": "!etop",
+            "desc": "Top 15 most used 7TV channel emotes.",
+            "options": "",
             "cooldown": "5 sec.",
-            "notes": "-"
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!etop",
+                    "Top 15 7TV emotes by the total count of used times: <img src=\"https://cdn.7tv.app/emote/62680b95ad9d41332dc15937/1x\" title=\"wait\" alt=\"wait\"> (9872), <img src=\"https://cdn.7tv.app/emote/61fe4fec690425de3c6411a8/1x\" title=\"Xomachel\" alt=\"Xomachel\"> (7177), <img src=\"https://cdn.7tv.app/emote/61c7d53112987d64d6ae8be3/1x\" title=\"telegramJR\" alt=\"telegramJR\"> (2703), <img src=\"https://cdn.7tv.app/emote/615a5051d272bdadf849e32b/1x\" title=\"Danj\" alt=\"Danj\"> (2138), <img src=\"https://cdn.7tv.app/emote/6179a096e0801fb9878826f6/1x\" title=\"Pag\" alt=\"Pag\"> (1759), <img src=\"https://cdn.7tv.app/emote/61841f474ea2f24e50095a49/1x\" title=\"kek\" alt=\"kek\"> (1372), <img src=\"https://cdn.7tv.app/emote/617ced1ac632476d20d06612/1x\" title=\"test\" alt=\"test\"> (1243), <img src=\"https://cdn.7tv.app/emote/60aeed77361b0164e63396f7/1x\" title=\"heCrazy\" alt=\"heCrazy\"> (906), <img src=\"https://cdn.7tv.app/emote/6148dbf13d8c2d23697ac139/1x\" title=\"KazakhstanWave\" alt=\"KazakhstanWave\"> (905), <img src=\"https://cdn.7tv.app/emote/615fcebcbd2ecfefac11fbcd/1x\" title=\"SAJHop\" alt=\"SAJHop\"> (585), <img src=\"https://cdn.7tv.app/emote/62431281cf7b2b34daffda08/1x\" title=\"GREDDYSS\" alt=\"GREDDYSS\"> (562), <img src=\"https://cdn.7tv.app/emote/61ac4634ffa9aba101bcd0a1/1x\" title=\"Monkeos\" alt=\"Monkeos\"> (411), <img src=\"https://cdn.7tv.app/emote/60baa54d79ace719643f27ca/1x\" title=\"DankPoke\" alt=\"DankPoke\"> (307), <img src=\"https://cdn.7tv.app/emote/60ae9eb73c27a8b79ce067e2/1x\" title=\"BJLaguk_\" alt=\"BJLaguk_\"> (287), <img src=\"https://cdn.7tv.app/emote/60ef48af276c8fd8c63567d3/1x\" title=\"kekBomb\" alt=\"kekBomb\"> (242)"
+                ]
+            }
         },
         "join": {
-            "name": "!join",
+            "namespace_id": "join",
+            "name": "Join in your chat room!",
+            "cmd_template": "!join",
             "desc": "Get the bot to join your chat room!",
-            "options": "-",
+            "options": "",
             "cooldown": "120 sec.",
-            "notes": ""
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!join",
+                    "@ilotterytea, successfully joined in ilotterytea's chat room (191400264)!"
+                ]
+            }
         },
         "set": {
-            "name": "!set",
-            "desc": "Set the preferred options for your channel.",
-            "options": "<code>lang</code>: set the channel language <i>(e.g. !set lang ru_ru)</i>.",
+            "namespace_id": "set",
+            "name": "Settings!",
+            "cmd_template": "!set [...OPTIONS] [VALUE]",
+            "desc": " Checking if it's alive, and a bunch of other data.",
+            "options": "",
             "cooldown": "10 sec.",
-            "notes": "<span style=\"color: green;\">Only for broadcasters.</span>"
+            "notes": "",
+            "min_role": "brd",
+            "examples": {
+                "Changing the chat language": [
+                    "!set lang ru_ru",
+                    "@ilotterytea, теперь бот будет говорить по-русски в этом чате! <img src=\"https://cdn.7tv.app/emote/60b234f3b1b03f6c998d8da2/1x\" title=\"KKomrade\" alt=\"KKomrade\">"
+                ]
+            }
         },
         "massping": {
-            "name": "!massping",
-            "desc": "Ping em, Fors! <img src=\"https://static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0\"> 💪",
-            "options": "-",
+            "namespace_id": "massping",
+            "name": "Mass ping!",
+            "cmd_template": "!massping [...MESSAGE]",
+            "desc": "Ping em, Fors! <img src=\"https://static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0\" alt=\"LUL\" title=\"LUL\"> 💪",
+            "options": "",
             "cooldown": "60 sec.",
-            "notes": "<span style=\"color: purple;\">Only for special users.</span>"
+            "notes": "",
+            "min_role": "brd",
+            "examples": {
+                "default": [
+                    "!massping yo! ",
+                    "@ilotterytea, yo! <span style=\"color: #555; text-decoration: underline;\" title=\"And so the bot will spam until it reaches the last chatter.\">[...]</span>"
+                ]
+            }
         },
         "spam": {
-            "name": "!spam",
+            "namespace_id": "spam",
+            "name": "Spam!",
+            "cmd_template": "!spam [INTEGER] [...MESSAGE]",
             "desc": "Sending a message with the specified repetitions.",
-            "options": "-",
+            "options": "",
             "cooldown": "30 sec.",
-            "notes": "<span style=\"color: purple;\">Only for special users.</span>"
+            "notes": "",
+            "min_role": "mod",
+            "examples": {
+                "default": [
+                    "!spam 10 Anyways, um... I bought a whole bunch of shungite rocks, do you know what shungite is? Anybody know what shungite is? No, not Suge Knight, I think he's locked up in prison. I'm talkin' shungite. Anyways, it's a two billion year-old like, rock stone that protects against frequencies and unwanted frequencies that may be traveling in the air. That's my story, I bought a whole bunch of stuff. Put 'em around the la casa. Little pyramids, stuff like that. <img src=\"https://cdn.7tv.app/emote/603ca573faf3a00014dff0a6/1x\" title=\"YEAHBUTBTTV\" alt=\"YEAHBUTBTTV\">",
+                    "Anyways, um... I bought a whole bunch of shungite rocks, do you know what shungite is? Anybody know what shungite is? No, not Suge Knight, I think he's locked up in prison. I'm talkin' shungite. Anyways, it's a two billion year-old like, rock stone that protects against frequencies and unwanted frequencies that may be traveling in the air. That's my story, I bought a whole bunch of stuff. Put 'em around the la casa. Little pyramids, stuff like that. <img src=\"https://cdn.7tv.app/emote/603ca573faf3a00014dff0a6/1x\" title=\"YEAHBUTBTTV\" alt=\"YEAHBUTBTTV\"> <span style=\"color: #555; text-decoration: underline;\" title=\"This message must be spammed 10 times.\">[...]</span>"
+                ]
+            }
         },
         "storage": {
-            "name": "!storage",
+            "namespace_id": "storage",
+            "name": "Storage Manipulator!",
+            "cmd_template": "!storage [...OPTIONS]",
             "desc": "Manipulating the storage file <i>(storage/storage.json)</i> with this command.",
-            "options": "<code>chown</code>: change the user's role <i>(e.g. !storage chown monkeos:special)</i>; <code>prefix</code>: change the prefix; <code>part</code>: leave the someone's chat room.",
+            "options": "-chmod [USERNAME]:[GROUP] => Change the user's role.<br>-prefix [VALUE] => Change the prefix.<br>-part [USERNAME] => safely leave the someone's chat room.",
             "cooldown": "5 sec.",
-            "notes": "<span style=\"color: red;\">Only for supa-users.</span>"
+            "notes": "",
+            "min_role": "sup",
+            "examples": {
+                "Change the user's role": [
+                    "!storage chmod monkeos:special",
+                    "@ilotterytea, user monkeos (678435820) was successfully assigned to the special group!"
+                ],
+                "Change the global prefix": [
+                    "!storage prefix ~$",
+                    "@ilotterytea, the command prefix successfully changed! (~$)"
+                ],
+                "Part the chat": [
+                    "!storage part fedotir",
+                    "@ilotterytea, the bot has safely parted from fedotir (431155435) chat room!"
+                ]
+            }
         },
         "scmd": {
-            "name": "!scmd",
-            "desc": "Create your own commands! ",
-            "options": "<code>mk <i>command_name</i> <i>response...</i></code>: Make a new command <i>(e.g. !scmd mk commands https://bot.hmmtodayiwill.ru/commands)</i><br><code>rm <i>command_name</i></code>: Remove the command <i>(e.g. !scmd rm commands)</i><br><code>ch <i>command_name</i> <i>response...</i></code>: Change the response of the command <i>(e.g. !scmd ch commands https://bot.hmmtodayiwill.ru/commands?lang=ru)</i>",
+            "namespace_id": "scmd",
+            "name": "Static commands!",
+            "cmd_template": "!scmd [OPTION] [NAME] [RESPONSE...]",
+            "desc": "Create your own commands!",
+            "options": "-mk => Make a new command.<br>-rm => Remove a command (use the response field doesn't required).<br>-ch => Change the response of the command.<br>-list - List of all available user-created commands (a broadcaster role doesn't required).",
             "cooldown": "5 sec.",
-            "notes": "<span style=\"color: green;\">Only for broadcasters.</span>"
+            "notes": "",
+            "min_role": "brd",
+            "examples": {
+                "Make a new command": [
+                    "!scmd mk commands <span style=\"text-decoration: underline;\">https://bot.hmmtodayiwill.ru/commands</span>",
+                    "@ilotterytea, Successfully created a new command \"!commands\"!"
+                ],
+                "Change the response of the command": [
+                    "!scmd ch commands <span style=\"text-decoration: underline;\">https://bot.hmmtodayiwill.ru/commands?lang=ru</span>",
+                    "@ilotterytea, Successfully changed the response of the command \"!commands\"!"
+                ],
+                "Remove a command": [
+                    "!scmd rm commands",
+                    "@ilotterytea, Successfully removed a command \"!commands\"!"
+                ],
+                "List of all available user-created commands": [
+                    "!scmd list",
+                    "@ilotterytea, List of user-created commands on ilotterytea's channel: !commands"
+                ]
+            }
         }
     }
 }

@@ -1,82 +1,188 @@
 {
-    "buttons": {
+    "titles": {
+        "home": "Главная",
+        "commands": "Команды"
+    },
+    "side_buttons": {
         "home": "Главная",
         "commands": "Команды",
-        "login": "Авторизоваться через Twitch"
+        "login": "Зайти через Twitch"
     },
-    "titles": {
-        "commands": "Стандартные команды Twitch"
+    "tooltips": {
+        "modRequired": "Требует роль модератора!",
+        "brdRequired": "Требует роль стримера!",
+        "supRequired": "Требует роль суперпользователя!"
     },
-    "table": {
-        "name": "Название",
-        "description": "Описание",
+    "headers": {
         "options": "Опции",
         "cooldown": "Задержка",
-        "notes": "Примечания..."
+        "notes": "Примечания",
+        "example": "Примеры"
     },
     "cmds": {
         "ping": {
-            "name": "!ping",
+            "namespace_id": "ping",
+            "name": "Пинг!",
+            "cmd_template": "!ping",
             "desc": "Проверка на работоспособность, и прочая информация.",
-            "options": "-",
+            "options": "",
             "cooldown": "5 сек.",
-            "notes": "-"
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!ping",
+                    "<img src=\"https://cdn.frankerfacez.com/emote/536927/1\" alt=\"FeelsDankMan\" title=\"FeelsDankMan\"> 🏓 Понг! Время сессии: 0 d. 00:00:54. Приземлён в 6 чатах. Потребление ОЗУ: 418 MB/966 MB. Задержка к серверам Twitch: 187ms. Используется коммит 6ce8068 (master)."
+                ]
+            }
         },
         "ecount": {
-            "name": "!ecount",
+            "namespace_id": "ecount",
+            "name": "Число использований 7TV эмоута!",
+            "cmd_template": "!ecount [EMOTE]",
             "desc": "Показывает сколько раз был использован определённый эмоут.",
-            "options": "-",
-            "cooldown": "1.5 сек.",
-            "notes": "-"
+            "options": "",
+            "cooldown": "5 сек.",
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!ecount <img src=\"https://cdn.7tv.app/emote/62680b95ad9d41332dc15937/1x\" title=\"wait\" alt=\"wait\">",
+                    "<img src=\"https://cdn.7tv.app/emote/62680b95ad9d41332dc15937/1x\" title=\"wait\" alt=\"wait\"> был использован 9,872 раз."
+                ]
+            }
         },
         "etop": {
-            "name": "!etop",
-            "desc": "Пятнадцать самых использованных 7TV эмоутов на канале.",
-            "options": "-",
+            "namespace_id": "etop",
+            "name": "Лидеры 7TV эмоутов!",
+            "cmd_template": "!etop",
+            "desc": "Пятнадцать самых используемых 7TV эмоутов в чате.",
+            "options": "",
             "cooldown": "5 сек.",
-            "notes": "-"
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!etop",
+                    "15 самых используемых 7TV эмоутов за всё время: <img src=\"https://cdn.7tv.app/emote/62680b95ad9d41332dc15937/1x\" title=\"wait\" alt=\"wait\"> (9872), <img src=\"https://cdn.7tv.app/emote/61fe4fec690425de3c6411a8/1x\" title=\"Xomachel\" alt=\"Xomachel\"> (7177), <img src=\"https://cdn.7tv.app/emote/61c7d53112987d64d6ae8be3/1x\" title=\"telegramJR\" alt=\"telegramJR\"> (2703), <img src=\"https://cdn.7tv.app/emote/615a5051d272bdadf849e32b/1x\" title=\"Danj\" alt=\"Danj\"> (2138), <img src=\"https://cdn.7tv.app/emote/6179a096e0801fb9878826f6/1x\" title=\"Pag\" alt=\"Pag\"> (1759), <img src=\"https://cdn.7tv.app/emote/61841f474ea2f24e50095a49/1x\" title=\"kek\" alt=\"kek\"> (1372), <img src=\"https://cdn.7tv.app/emote/617ced1ac632476d20d06612/1x\" title=\"test\" alt=\"test\"> (1243), <img src=\"https://cdn.7tv.app/emote/60aeed77361b0164e63396f7/1x\" title=\"heCrazy\" alt=\"heCrazy\"> (906), <img src=\"https://cdn.7tv.app/emote/6148dbf13d8c2d23697ac139/1x\" title=\"KazakhstanWave\" alt=\"KazakhstanWave\"> (905), <img src=\"https://cdn.7tv.app/emote/615fcebcbd2ecfefac11fbcd/1x\" title=\"SAJHop\" alt=\"SAJHop\"> (585), <img src=\"https://cdn.7tv.app/emote/62431281cf7b2b34daffda08/1x\" title=\"GREDDYSS\" alt=\"GREDDYSS\"> (562), <img src=\"https://cdn.7tv.app/emote/61ac4634ffa9aba101bcd0a1/1x\" title=\"Monkeos\" alt=\"Monkeos\"> (411), <img src=\"https://cdn.7tv.app/emote/60baa54d79ace719643f27ca/1x\" title=\"DankPoke\" alt=\"DankPoke\"> (307), <img src=\"https://cdn.7tv.app/emote/60ae9eb73c27a8b79ce067e2/1x\" title=\"BJLaguk_\" alt=\"BJLaguk_\"> (287), <img src=\"https://cdn.7tv.app/emote/60ef48af276c8fd8c63567d3/1x\" title=\"kekBomb\" alt=\"kekBomb\"> (242)"
+                ]
+            }
         },
         "join": {
-            "name": "!join",
-            "desc": "Присоединить бота к вашему чату!",
-            "options": "-",
+            "namespace_id": "join",
+            "name": "Зайти в чат!",
+            "cmd_template": "!join",
+            "desc": "Получить бота в своем чате!",
+            "options": "",
             "cooldown": "120 сек.",
-            "notes": "-"
+            "notes": "",
+            "min_role": "",
+            "examples": {
+                "default": [
+                    "!join",
+                    "@ilotterytea, успешно присоединился к чату ilotterytea (191400264)!"
+                ]
+            }
         },
         "set": {
-            "name": "!set",
-            "desc": "Установить желанные настройки бота к вашему чату.",
-            "options": "<code>lang</code>: установить язык чата <i>(например, !set lang ru_ru)</i>.",
+            "namespace_id": "set",
+            "name": "Настройки бота к чату!",
+            "cmd_template": "!set [...OPTIONS] [VALUE]",
+            "desc": "Установите желанные настройки бота для канала.",
+            "options": "-lang => Установить язык бота в чате",
             "cooldown": "10 сек.",
-            "notes": "<span style=\"color: green;\">Доступно только для стримеров.</span>"
+            "notes": "",
+            "min_role": "brd",
+            "examples": {
+                "Смена языка бота в чате": [
+                    "!set lang en_us",
+                    "@ilotterytea, the bot now speaks English in this chat! <img src=\"https://cdn.betterttv.net/emote/566ca04265dbbdab32ec054a/1x\" title=\"KKona\" alt=\"KKona\">"
+                ]
+            }
         },
         "massping": {
-            "name": "!massping",
-            "desc": "Тыкни их, Форсен <img src=\"https://static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0\"> 💪",
-            "options": "-",
+            "namespace_id": "massping",
+            "name": "Массовый тык чаттеров!",
+            "cmd_template": "!massping [...MESSAGE]",
+            "desc": "Тыкни их, Форс! <img src=\"https://static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0\" alt=\"LUL\" title=\"LUL\"> 💪",
+            "options": "",
             "cooldown": "60 сек.",
-            "notes": "<span style=\"color: purple;\">Только для пользователей с группой 𝓼𝓹𝓮𝓬𝓲𝓪𝓵.</span>"
+            "notes": "",
+            "min_role": "brd",
+            "examples": {
+                "default": [
+                    "!massping yo! ",
+                    "@ilotterytea, yo! <span style=\"color: #555; text-decoration: underline;\" title=\"и так он пройдет по каждому пользователю в чате\">[...]</span>"
+                ]
+            }
         },
         "spam": {
-            "name": "!spam",
+            "namespace_id": "spam",
+            "name": "Насрать в чат!",
+            "cmd_template": "!spam [INTEGER] [...MESSAGE]",
             "desc": "Отправить одно и то же сообщение с указанным количеством раз.",
-            "options": "-",
+            "options": "",
             "cooldown": "30 сек.",
-            "notes": "<span style=\"color: purple;\">Только для пользователей с группой 𝓼𝓹𝓮𝓬𝓲𝓪𝓵.</span>"
+            "notes": "",
+            "min_role": "mod",
+            "examples": {
+                "default": [
+                    "!spam 10 <img src=\"https://cdn.7tv.app/emote/62431281cf7b2b34daffda08/1x\" title=\"GREDDYSS\" alt=\"GREDDYSS\"> АХАХАХХАХАХАХХАХАХАХА",
+                    "<img src=\"https://cdn.7tv.app/emote/62431281cf7b2b34daffda08/1x\" title=\"GREDDYSS\" alt=\"GREDDYSS\"> АХАХАХХАХАХАХХАХАХАХА <span style=\"color: #555; text-decoration: underline;\" title=\"Это сообщение должно быть отправлено 10 раз, как и указано.\">[...]</span>"
+                ]
+            }
         },
         "storage": {
-            "name": "!storage",
-            "desc": "Манипулировать с хранилищем <i>(storage/storage.json)</i>",
-            "options": "<code>chown</code>: изменить роль пользователя <i>(например, !storage chown monkeos:special)</i>; <code>prefix</code>: изменить префикс; <code>part</code>: покинуть чей-то чат.",
+            "namespace_id": "storage",
+            "name": "Манимулятор хранилища!",
+            "cmd_template": "!storage [...OPTIONS]",
+            "desc": "Взаимодействовать с файлом хранилища <i>(storage/storage.json)</i>!",
+            "options": "-chmod [USERNAME]:[GROUP] => Изменить роль пользователя.<br>-prefix [VALUE] => Изменить глобальный префикс.<br>-part [USERNAME] => безопасно (без бана) покинуть чей-то чат.",
             "cooldown": "5 сек.",
-            "notes": "<span style=\"color: red;\">Только для супер пользователей.</span>"
+            "notes": "",
+            "min_role": "sup",
+            "examples": {
+                "Изменить роль пользователя": [
+                    "!storage chmod monkeos:special",
+                    "@ilotterytea, пользователь monkeos (678435820) был успешно привязан к группе special!"
+                ],
+                "Поменять глобальный префикс": [
+                    "!storage prefix ~$",
+                    "@ilotterytea, глобальный префикс для команд успешно изменен! (~$)"
+                ],
+                "Покинуть чат": [
+                    "!storage part fedotir",
+                    "@ilotterytea, комната fedotir (431155435) безопасно покинута ботом!"
+                ]
+            }
         },
         "scmd": {
-            "name": "!scmd",
-            "desc": "Создать пользовательскую команду для своего чата! ",
-            "options": "<code>mk <i>имя_команды</i> <i>сообщение...</i></code>: Создать новую команду <i>(например, !scmd mk commands https://bot.hmmtodayiwill.ru/commands)</i><br><code>rm <i>имя_команды</i></code>: Удалить существующую команду <i>(например, !scmd rm commands)</i><br><code>ch <i>имя_команды</i> <i>сообщение...</i></code>: Изменить ответ команды <i>(например, !scmd ch commands https://bot.hmmtodayiwill.ru/commands?lang=ru)</i>",
+            "namespace_id": "scmd",
+            "name": "Статичная команда!",
+            "cmd_template": "!scmd [OPTION] [NAME] [RESPONSE...]",
+            "desc": "Создайте свою команду!",
+            "options": "-mk => Создать новую команду.<br>-rm => Удалить существующую команду (использование поля ответа не требуется).<br>-ch => Изменить ответ на команду.<br>-list - Список всех доступных пользовательских команд (не требует прав стримера).",
             "cooldown": "5 сек.",
-            "notes": "<span style=\"color: green;\">Доступно только для стримеров.</span>"
+            "notes": "",
+            "min_role": "brd",
+            "examples": {
+                "Создать новую команду": [
+                    "!scmd mk commands <span style=\"text-decoration: underline;\">https://bot.hmmtodayiwill.ru/commands</span>",
+                    "@ilotterytea, Успешно создана новая команда \"!commands\"!"
+                ],
+                "Изменить ответ на команду": [
+                    "!scmd ch commands <span style=\"text-decoration: underline;\">https://bot.hmmtodayiwill.ru/commands?lang=ru</span>",
+                    "@ilotterytea, Успешно редактирован ответ команды \"!commands\"!"
+                ],
+                "Удалить команду": [
+                    "!scmd rm commands",
+                    "@ilotterytea, Команда \"!commands\" успешно удалена!"
+                ],
+                "Список пользовательских команд": [
+                    "!scmd list",
+                    "@ilotterytea, Список пользовательских команд на канале ilotterytea: !commands"
+                ]
+            }
         }
     }
 }

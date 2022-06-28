@@ -23,7 +23,15 @@ const consts = {
         </div>
         <hr>
         <a href="/" id="button"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="/commands" id="button"><i class="fa-solid fa-terminal"></i> Commands</a>`
+        <a href="/commands" id="button"><i class="fa-solid fa-terminal"></i> Commands</a>`,
+
+        SidebarCommands: `<div class="brand">
+        <img src="https://cdn.7tv.app/emote/60ae69a686fc40d488b1033d/4x" width="64">
+        <h3><span id="underline">i</span>Lotterytea's <span id="underline">T</span>witch <span id="underline">B</span>ot <span id="underline" style="color: rgb(255, 43, 43);">2</span></h3>
+        </div>
+        <hr>
+        <a href="/" id="button"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="/commands" id="button"><i class="fa-solid fa-terminal"></i> Commands</a><!--%COMMANDSLIST%-->`
     }
 }
 module.exports = consts;

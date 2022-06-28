@@ -23,12 +23,13 @@ const { readFileSync } = require("fs");
 require("dotenv").config({path: "./bot.env"});
 
 // SSL Certificate:
+/*
 var certcredentials = {
     key: readFileSync(process.env.CERT_PRIKEY, {encoding: "utf-8"}),
     cert: readFileSync(process.env.CERT_CERT, {encoding: "utf-8"}),
     ca: readFileSync(process.env.CERT_CA, {encoding: "utf-8"})
 };
-
+*/
 // App:
 var app = express();
 
@@ -36,18 +37,23 @@ var app = express();
 var homepage = require("./routers/homepage");
 var auth = require("./routers/auth");
 var cmds = require("./routers/commands");
+var api = require("./routers/api");
 
 // Use the routers:
 app.use("/", homepage);
 app.use("/auth", auth);
 app.use("/commands", cmds);
+app.use("/api", api);
 
 // Use the static files:
 app.use(express.static(`${__dirname}/static`));
 
+app.listen(8080, () => console.log("okaj"));
+
+/*
 // Launch the express server:
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(certcredentials, app);
 
 httpServer.listen(process.env.WEB_HTTPPORT, () => console.log("HTTP Server running on port ", process.env.WEB_HTTPPORT));
-httpsServer.listen(process.env.WEB_HTTPSPORT, () => console.log("HTTPS Server running on port ", process.env.WEB_HTTPSPORT));
+httpsServer.listen(process.env.WEB_HTTPSPORT, () => console.log("HTTPS Server running on port ", process.env.WEB_HTTPSPORT));*/
