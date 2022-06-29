@@ -1,0 +1,34 @@
+{
+  "name": "itb2-server",
+  "version": "1.0.12",
+  "description": "Web server for iLotterytea's Twitch Bot 2.",
+  "main": "index.js",
+  "scripts": {
+    "web": "node index.js",
+    "sudoweb": "sudo node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdankenough/server-apollo.git"
+  },
+  "keywords": [
+    "itb2"
+  ],
+  "author": "NotDankEnough <hatesociety@pm.me> (https://hmmtodayiwill.ru)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/notdankenough/server-apollo/issues"
+  },
+  "homepage": "https://bot.hmmtodayiwill.ru",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "twitch": "^4.6.7",
+    "twitch-auth": "^4.6.7"
+  }
+}
